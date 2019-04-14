@@ -4,6 +4,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 27px;
+  padding-bottom: 21px;
 
   background-color: #ffffff;
 }
@@ -48,9 +49,24 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
 }
 
 .index-promo__image {
   position: relative;
   z-index: 2;
+}
+
+@media (min-width: $tablet-width) {
+  .index-promo {
+    width: 768px;
+    min-height: 850px; // временно
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-promo {
+    width: 1300px;
+    min-height: 636px; // временно
+  }
 }
