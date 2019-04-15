@@ -1,0 +1,22 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 133px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 22px;
+  padding-bottom: 16px;
+
+  list-style: none;
+}
+
+.social__item {
+  min-width: 22px;
+
+  text-align: center;
+}
+
+.social__link {
+  font-size: 0;
+}

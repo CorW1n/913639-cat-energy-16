@@ -1,0 +1,16 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.copyright__name {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+}

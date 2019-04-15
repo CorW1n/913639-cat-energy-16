@@ -1,5 +1,6 @@
 .concept {
-  width: 280px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .concept__title {
@@ -32,4 +33,23 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+}
+
+@media (min-width: $tablet-width) {
+  .concept {
+    min-height: 750px + 1px;
+    width: 708px;
+  }
+
+  .concept__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .concept {
+    min-height: 410px;
+    width: 1300px;
+  }
 }

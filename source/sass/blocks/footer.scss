@@ -1,7 +1,37 @@
-.copyright__link {
-  color: #444444;
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
-  font-weight: 400;
+.footer {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.footer > .wrap {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+}
+
+.footer__logo {
+  display: block;
+  padding-top: 38px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #e6e6e6;
+
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 768px;
+  }
+
+  .footer > .wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 150px; // временно
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    width: 1300px;
+  }
 }

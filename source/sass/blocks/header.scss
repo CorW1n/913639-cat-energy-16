@@ -1,3 +1,55 @@
 .header {
-  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__wrapper > .wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  border-bottom: 1px solid #ededed;
+}
+
+.header__logo {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .header__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px; // временно
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .header__wrapper > .wrap {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__wrapper {
+    width: 1300px;
+    min-height: 140px; // временно
+    padding: 0 40px;
+  }
+
+  .header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
 }
