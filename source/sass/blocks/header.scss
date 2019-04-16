@@ -1,6 +1,8 @@
 .header {
   display: flex;
   flex-direction: column;
+
+  background-color: tomato;
 }
 
 .header__wrapper {
@@ -17,6 +19,8 @@
 
 .header__logo {
   display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: $tablet-width) {
