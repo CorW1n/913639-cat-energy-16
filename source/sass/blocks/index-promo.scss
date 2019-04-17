@@ -61,6 +61,55 @@
   .index-promo {
     width: 768px;
     min-height: 850px; // временно
+    padding-top: 0;
+    padding-bottom: 0;
+
+    &::before {
+      background: none;
+    }
+
+    .wrap {
+      padding-top: 39px;
+    }
+  }
+
+  .index-promo__title {
+    width: 510px;
+    margin-bottom: 41px;
+    padding-left: 87px;
+
+    color: #111111;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .index-promo__slogan {
+    margin-bottom: 16px;
+    padding-left: 88px;
+
+    color: #111111;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .index-promo__image {
+    width: 709px;
+    height: 609px;
+  }
+
+  .index-promo__link {
+    position: absolute;
+    top: 268px;
+    left: 119px;
+    z-index: 5;
+
+    width: 245px;
+    padding: 15px 29px 17px 25px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
