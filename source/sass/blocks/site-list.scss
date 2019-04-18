@@ -62,3 +62,32 @@
     line-height: 25px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    position: relative;
+    z-index: 2;
+
+    align-items: center;
+  }
+
+  .site-list__item {
+    padding-left: 34px;
+
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    padding-top: 18px;
+
+    color: #ffffff;
+    font-size: 20px;
+
+    background-color: transparent;
+  }
+
+  .site-list__item--active .site-list__link {
+    padding-top: 20px;
+    border-color: #ffffff;
+  }
+}

@@ -7,19 +7,19 @@
   padding-bottom: 21px;
 
   background-color: #ffffff;
-}
 
-.index-promo::before {
-  content: "";
+  &::before {
+    content: "";
 
-  position: absolute;
-  top: 0;
+    position: absolute;
+    top: 0;
 
-  width: 100%;
-  height: 305px;
+    width: 100%;
+    height: 305px;
 
-  background: url("../img/index-background-mobile@1x.jpg") center top no-repeat, #68b738;
-  background-size: 320px 100%, 100%;
+    background: url("../img/index-background-mobile@1x.jpg") center top no-repeat, #68b738;
+    background-size: 320px 100%, 100%;
+  }
 }
 
 .index-promo__title {
@@ -69,7 +69,7 @@
     }
 
     .wrap {
-      padding-top: 39px;
+      padding-top: 40px;
     }
   }
 
@@ -117,5 +117,42 @@
   .index-promo {
     width: 1300px;
     min-height: 636px; // временно
+
+    .wrap {
+      padding-top: 82px;
+    }
+
+    &::before {
+      top: -140px;
+      left: 50%;
+
+      width: 720px;
+      height: 696px;
+
+      background: url("../img/index-background-desktop@1x.jpg") center top no-repeat, #68b738;
+      background-size: 100%, 100%;
+    }
+  }
+
+  .index-promo__title {
+    padding-left: 81px;
+  }
+
+  .index-promo__slogan {
+    padding-left: 81px;
+  }
+
+  .index-promo__link {
+    top: 316px;
+    left: 120px;
+  }
+
+  .index-promo__image {
+    position: absolute;
+    top: 2px;
+    left: 490px;
+
+    width: 552px;
+    height: 499px;
   }
 }

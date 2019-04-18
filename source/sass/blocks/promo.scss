@@ -49,7 +49,7 @@
     width: 708px;
     min-height: 372px; //временно
     margin-bottom: 30px;
-    padding-top: 74px;
+    padding-top: 75px;
   }
 
   .promo > .wrap {
@@ -70,13 +70,14 @@
 
     font-size: 16px;
     line-height: 24px;
-  }
 
-  .promo__description br {
-    display: inline;
+    br {
+      display: inline;
+    }
   }
 
   .promo__link {
+    width: 40%;
     border: none;
 
     font-size: 20px;
@@ -88,5 +89,20 @@
   .promo {
     width: 570px;
     margin: 0;
+    padding-top: 76px;
+  }
+
+  .promo__title {
+    margin-bottom: 74px;
+    padding-left: 162px;
+  }
+
+  .promo__description {
+    width: 470px;
+    margin-bottom: 15px;
+
+    br {
+      display: none;
+    }
   }
 }

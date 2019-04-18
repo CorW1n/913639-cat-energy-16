@@ -1,8 +1,6 @@
 .header {
   display: flex;
   flex-direction: column;
-
-  background-color: tomato;
 }
 
 .header__wrapper {
@@ -50,7 +48,11 @@
   .header__wrapper {
     width: 1300px;
     min-height: 140px; // временно
-    padding: 0 40px;
+    padding: 54px 40px 0;
+  }
+
+  .header__logo {
+    padding: 0;
   }
 
   .header__logo-image {
