@@ -1,0 +1,45 @@
+.spec {
+  width: 140px;
+
+  border-collapse: collapse;
+}
+
+.spec__field {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.spec__value {
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .spec {
+    width: 100%;
+    margin-bottom: 33px;
+  }
+
+  .spec tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .spec__field {
+    padding: 8px 0 7px;
+
+    font-size: 16px;
+  }
+
+  .spec__value {
+    padding: 8px 0 7px;
+
+    font-size: 16px;
+  }
+}

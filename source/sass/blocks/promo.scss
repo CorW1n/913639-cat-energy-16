@@ -29,6 +29,10 @@
   font-weight: 400;
 }
 
+.promo__description br {
+  display: none;
+}
+
 .promo__link {
   display: block;
   padding-top: 16px;
@@ -45,10 +49,39 @@
     width: 708px;
     min-height: 372px; //временно
     margin-bottom: 30px;
+    padding-top: 75px;
   }
 
   .promo > .wrap {
     padding: 0 52px;
+  }
+
+  .promo__title {
+    margin-bottom: 27px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .promo__description {
+    width: 380px;
+    margin-bottom: 39px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    br {
+      display: inline;
+    }
+  }
+
+  .promo__link {
+    width: 40%;
+    border: none;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -56,5 +89,20 @@
   .promo {
     width: 570px;
     margin: 0;
+    padding-top: 76px;
+  }
+
+  .promo__title {
+    margin-bottom: 74px;
+    padding-left: 162px;
+  }
+
+  .promo__description {
+    width: 470px;
+    margin-bottom: 15px;
+
+    br {
+      display: none;
+    }
   }
 }

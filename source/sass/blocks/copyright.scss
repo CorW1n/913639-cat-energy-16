@@ -14,3 +14,13 @@
   line-height: 16px;
   font-weight: 400;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    border: none;
+  }
+
+  .copyright__name {
+    padding-right: 15px;
+  }
+}

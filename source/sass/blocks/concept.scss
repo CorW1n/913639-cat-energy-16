@@ -29,21 +29,60 @@
 .concept__description {
   margin: 0;
 
+  color: #444444;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .concept {
     min-height: 750px + 1px;
-    width: 708px;
+    width: 768px;
+
+    .wrap {
+      width: 768px;
+      padding-top: 15px;
+    }
+  }
+
+  .concept__title {
+    margin-bottom: 71px;
+
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .concept__list {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .concept__item {
+    width: 250px;
+    margin-right: 134px;
+    margin-bottom: 132px;
+    padding-top: 113px;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .concept__description {
+    font-size: 16px;
+    line-height: 24px;
+
+    & br {
+      display: inline;
+    }
   }
 }
 
@@ -51,5 +90,27 @@
   .concept {
     min-height: 410px;
     width: 1300px;
+
+    .wrap {
+      width: 1300px;
+      padding-top: 73px;
+    }
+  }
+
+  .concept__item {
+    width: 245px;
+    margin-right: 80px;
+    margin-bottom: 20px;
+    padding-top: 113px;
+    padding-left: 0;
+    padding-bottom: 45px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }
