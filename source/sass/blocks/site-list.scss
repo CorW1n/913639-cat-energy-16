@@ -80,7 +80,6 @@
   .site-list__link {
     padding-top: 18px;
 
-    color: #ffffff;
     font-size: 20px;
 
     background-color: transparent;
@@ -88,6 +87,13 @@
 
   .site-list__item--active .site-list__link {
     padding-top: 20px;
+  }
+
+  .site-list__link--color {
+    color: #ffffff;
+  }
+
+  .site-list__item--active .site-list__link--color {
     border-color: #ffffff;
   }
 }
