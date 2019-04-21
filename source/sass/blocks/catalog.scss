@@ -51,6 +51,10 @@
   padding-top: 20px;
 }
 
+.catalog__item-link {
+  flex-shrink: 0;
+}
+
 .catalog__item-title {
   width: 75px;
   margin: 0;
