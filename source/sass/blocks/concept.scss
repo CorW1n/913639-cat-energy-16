@@ -5,7 +5,7 @@
 
 .concept__title {
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   font-size: 36px;
   line-height: 60px;
@@ -95,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .concept {
-    min-height: 750px + 1px;
+    min-height: 750px + 1px; //временно
     width: 768px;
 
     .wrap {
@@ -236,7 +236,7 @@
 
 @media (min-width: $desktop-width) {
   .concept {
-    min-height: 410px;
+    min-height: 410px; //временно
     width: 1300px;
 
     .wrap {

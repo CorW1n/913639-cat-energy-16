@@ -41,6 +41,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
 
     font-family: "Oswald", "Arial", sans-serif;
@@ -48,7 +49,7 @@
 
   .site-list__item {
     width: auto;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     padding-left: 36px;
     border: none;
   }

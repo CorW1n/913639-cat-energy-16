@@ -4,7 +4,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 27px;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
 
   background-color: #ffffff;
 
@@ -56,13 +56,13 @@
   position: relative;
   z-index: 2;
 
-  margin-bottom: 2px;
+  display: block;
+  margin-bottom: 4px;
 }
 
 @media (min-width: $tablet-width) {
   .index-promo {
     width: 768px;
-    min-height: 850px; // временно
     padding-top: 0;
     padding-bottom: 0;
 
@@ -99,11 +99,12 @@
   .index-promo__image {
     width: 709px;
     height: 609px;
+    margin-bottom: 4px;
   }
 
   .index-promo__link {
     position: absolute;
-    top: 268px;
+    top: 269px;
     left: 119px;
     z-index: 5;
 

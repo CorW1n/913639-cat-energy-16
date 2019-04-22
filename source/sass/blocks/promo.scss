@@ -64,7 +64,7 @@
 
 .promo__description {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   color: #444444;
   font-family: "Arial", sans-serif;
@@ -79,9 +79,9 @@
 
 .promo__link {
   display: block;
-  padding-top: 18px;
+  padding-top: 16px;
   padding-left: 0;
-  padding-bottom: 21px;
+  padding-bottom: 17px;
   border-top: 1px solid #d9d9d9;
 
   color: #111111;
@@ -91,9 +91,9 @@
 @media (min-width: $tablet-width) {
   .promo {
     width: 708px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
     padding-top: 75px;
-    padding-bottom: 39px;
+    padding-bottom: 45px;
 
     &::before {
       top: 92px;
@@ -144,7 +144,7 @@
 
   .promo__description {
     width: 380px;
-    margin-bottom: 38px;
+    margin-bottom: 39px;
 
     font-size: 16px;
     line-height: 24px;
