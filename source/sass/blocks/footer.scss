@@ -18,6 +18,18 @@
   text-align: center;
 }
 
+.footer__logo[href] {
+  cursor: pointer;
+}
+
+.footer__logo[href]:hover {
+  opacity: 0.8;
+}
+
+.footer__logo[href]:active {
+  opacity: 0.6;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     width: 768px;
