@@ -48,7 +48,7 @@
 
 .catalog__info-wrapper {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
 .catalog__item-link {
@@ -58,7 +58,7 @@
 .catalog__item-title {
   width: 75px;
   margin: 0;
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 
 .catalog__link-title {
@@ -66,6 +66,24 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+
+.catalog__item--add::after {
+  content: "";
+
+  position: absolute;
+  bottom: 153px;
+  left: 50%;
+
+  width: 30px;
+  height: 30px;
+
+  background: url("../img/icon-plus-mobile.svg") center center no-repeat;
+  background-size: 30px 30px;
+
+  opacity: 0.2;
+
+  transform: translateX(-50%);
 }
 
 .catalog__item--add .catalog__item-title {
@@ -126,7 +144,7 @@
     .wrap {
       justify-content: flex-end;
       align-items: center;
-      padding: 0 37px 0 38px;
+      padding: 0;
     }
 
     &:nth-child(2n) {
@@ -152,11 +170,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 37px 0 38px;
+  }
+
+  .catalog__item-link {
+    margin-bottom: 31px;
   }
 
   .catalog__item-title {
     width: 150px;
-    margin-bottom: 17px;
+    margin-bottom: 11px;
 
     text-align: center;
   }
@@ -166,7 +189,7 @@
   }
 
   .catalog__button {
-    width: 100%;
+    width: 77%;
   }
 
   .catalog__item--add::before {
@@ -175,6 +198,16 @@
     border: 1px solid #e6e6e6;
 
     background-color: #ffffff;
+  }
+
+  .catalog__item--add::after {
+    bottom: 316px;
+
+    width: 60px;
+    height: 60px;
+
+    background-image: url("../img/icon-plus.svg");
+    background-size: 60px 60px;
   }
 
   .catalog__item--add .catalog__item-title {
@@ -205,7 +238,7 @@
     margin-bottom: 33px;
 
     .wrap {
-      padding: 0 38px;
+      padding: 0;
     }
 
     &:nth-child(2n) {
@@ -215,6 +248,18 @@
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .catalog__item-link {
+    margin-bottom: 13px;
+  }
+
+  .catalog__info-wrapper {
+    padding: 16px 38px 0;
+  }
+
+  .catalog__button {
+    width: 69%;
   }
 
   .catalog__item--add::before {
