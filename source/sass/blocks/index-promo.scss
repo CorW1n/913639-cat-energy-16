@@ -4,7 +4,7 @@
   width: 320px;
   margin: 0 auto;
   padding-top: 27px;
-  padding-bottom: 21px;
+  padding-bottom: 22px;
 
   background-color: #ffffff;
 
@@ -19,6 +19,13 @@
 
     background: url("../img/index-background-mobile@1x.jpg") center top no-repeat, #68b738;
     background-size: 320px 100%, 100%;
+  }
+}
+
+@media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+  .index-promo::before {
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 
@@ -55,12 +62,14 @@
 .index-promo__image {
   position: relative;
   z-index: 2;
+
+  display: block;
+  margin-bottom: 4px;
 }
 
 @media (min-width: $tablet-width) {
   .index-promo {
     width: 768px;
-    min-height: 850px; // временно
     padding-top: 0;
     padding-bottom: 0;
 
@@ -85,7 +94,7 @@
   }
 
   .index-promo__slogan {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     padding-left: 88px;
 
     color: #111111;
@@ -97,11 +106,12 @@
   .index-promo__image {
     width: 709px;
     height: 609px;
+    margin-bottom: 0;
   }
 
   .index-promo__link {
     position: absolute;
-    top: 268px;
+    top: 269px;
     left: 119px;
     z-index: 5;
 
@@ -126,11 +136,18 @@
       top: -140px;
       left: 50%;
 
-      width: 720px;
+      width: 650px;
       height: 696px;
 
-      background: url("../img/index-background-desktop@1x.jpg") center top no-repeat, #68b738;
-      background-size: 100%, 100%;
+      background: url("../img/index-background-desktop@1x.jpg") left top no-repeat, #68b738;
+      background-size: cover;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    .index-promo::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 

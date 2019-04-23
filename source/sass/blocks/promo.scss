@@ -1,15 +1,59 @@
 .promo {
+  position: relative;
+
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 30px 0 0;
 
   background-color: #f2f2f2;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 25px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: #68b738;
+    border-radius: 50%;
+  }
+}
+
+.promo--slim::after {
+  content: "";
+
+  position: absolute;
+  top: 23px;
+  left: 30px;
+
+  width: 35px;
+  height: 49px;
+
+  background: url("../img/icon-cat-slim.svg") center top no-repeat;
+  background-size: 35px 49px;
+}
+
+.promo--pro::after {
+  content: "";
+
+  position: absolute;
+  top: 35px;
+  left: 13px;
+
+  width: 67px;
+  height: 28px;
+
+  background: url("../img/icon-cat-pro.svg") center top no-repeat;
+  background-size: 67px 28px;
 }
 
 .promo__title {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   padding-left: 71px;
 
   font-size: 24px;
@@ -20,7 +64,7 @@
 
 .promo__description {
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 
   color: #444444;
   font-family: "Arial", sans-serif;
@@ -47,9 +91,43 @@
 @media (min-width: $tablet-width) {
   .promo {
     width: 708px;
-    min-height: 372px; //временно
     margin-bottom: 30px;
     padding-top: 75px;
+    padding-bottom: 45px;
+
+    &::before {
+      top: 92px;
+      right: 61px;
+      left: auto;
+
+      width: 200px;
+      height: 200px;
+
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  .promo--slim::after {
+    top: 80px;
+    right: 92px;
+    left: auto;
+
+    width: 140px;
+    height: 194px;
+
+    background-size: 140px 194px;
+  }
+
+  .promo--pro::after {
+    top: 135px;
+    right: 28px;
+    left: auto;
+
+    width: 268px;
+    height: 112px;
+
+    background-size: 268px 112px;
   }
 
   .promo > .wrap {
@@ -90,6 +168,40 @@
     width: 570px;
     margin: 0;
     padding-top: 76px;
+
+    &::before {
+      top: 47px;
+      right: auto;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  .promo--slim::after {
+    top: 41px;
+    right: auto;
+    left: 66px;
+
+    width: 70px;
+    height: 97px;
+
+    background-size: 70px 97px;
+  }
+
+  .promo--pro::after {
+    top: 69px;
+    right: auto;
+    left: 34px;
+
+    width: 134px;
+    height: 56px;
+
+    background-size: 134px 56px;
   }
 
   .promo__title {
