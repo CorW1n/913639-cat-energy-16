@@ -5,6 +5,14 @@
   padding-top: 14px;
   padding-bottom: 16px;
   border-top: 1px solid #d9d9d9;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__name {
