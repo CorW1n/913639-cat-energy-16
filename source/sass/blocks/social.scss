@@ -19,10 +19,53 @@
 
 .social__link {
   font-size: 0;
+
+  &:hover path {
+    fill: #68b738;
+  }
+
+  &:hover .st0 {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     padding: 0;
+  }
+
+  .social__item {
+    width: 30px;
+  }
+
+  .social__item--vk {
+    height: 16px;
+
+    & svg {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  .social__item--insta {
+    height: 23px;
+
+    & svg {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  .social__item--fb {
+    height: 28px;
+
+    & svg {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

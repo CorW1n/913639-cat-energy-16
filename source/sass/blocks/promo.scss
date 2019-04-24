@@ -64,7 +64,8 @@
 
 .promo__description {
   margin: 0;
-  margin-bottom: 21px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #d9d9d9;
 
   color: #444444;
   font-family: "Arial", sans-serif;
@@ -78,14 +79,38 @@
 }
 
 .promo__link {
+  position: relative;
+
   display: block;
   padding-top: 16px;
   padding-left: 0;
   padding-bottom: 17px;
-  border-top: 1px solid #d9d9d9;
 
   color: #111111;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 21px;
+    right: 110px;
+
+    width: 33px;
+    height: 11px;
+
+    background: url("../img/icon-right-arrow-long.svg") left center no-repeat;
+    background-size: 24px 11px;
+  }
+
+  &:hover::after {
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-size: 33px 11px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -144,7 +169,9 @@
 
   .promo__description {
     width: 380px;
+    padding-bottom: 0;
     margin-bottom: 39px;
+    border: none;
 
     font-size: 16px;
     line-height: 24px;
@@ -156,10 +183,13 @@
 
   .promo__link {
     width: 40%;
-    border: none;
 
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      right: 80px;
+    }
   }
 }
 
@@ -216,5 +246,9 @@
     br {
       display: none;
     }
+  }
+
+  .promo__link::after {
+    right: 24px;
   }
 }
