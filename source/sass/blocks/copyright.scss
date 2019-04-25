@@ -6,7 +6,7 @@
   padding-bottom: 16px;
   border-top: 1px solid #d9d9d9;
 
-  &:hover path {
+  &:hover .copyright__logo {
     fill: #68b738;
   }
 
@@ -21,6 +21,10 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+}
+
+.copyright__logo {
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {

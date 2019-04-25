@@ -17,14 +17,14 @@
   text-align: center;
 }
 
+.social__icon {
+  fill: #666666;
+}
+
 .social__link {
   font-size: 0;
 
-  &:hover path {
-    fill: #68b738;
-  }
-
-  &:hover .st0 {
+  &:hover .social__icon {
     fill: #68b738;
   }
 
@@ -45,7 +45,7 @@
   .social__item--vk {
     height: 16px;
 
-    & svg {
+    svg {
       width: 30px;
       height: 16px;
     }
@@ -54,7 +54,7 @@
   .social__item--insta {
     height: 23px;
 
-    & svg {
+    svg {
       width: 23px;
       height: 23px;
     }
@@ -63,7 +63,7 @@
   .social__item--fb {
     height: 28px;
 
-    & svg {
+    svg {
       width: 14px;
       height: 28px;
     }
