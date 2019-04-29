@@ -68,7 +68,7 @@
   border-radius: 50%;
 }
 
-.profile__radio:focus + label::before{
+.profile__radio:focus + label::before {
   border-color: #bcbcbc;
   outline: 2px solid highlight;
 }
