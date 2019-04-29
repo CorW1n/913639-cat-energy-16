@@ -1,0 +1,150 @@
+.profile {
+  margin-bottom: 27px;
+}
+
+.profile__data-list {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0 20px 0 19px;
+
+  list-style: none;
+}
+
+.profile__data-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.profile__data-item label {
+  margin-right: 15px;
+
+  white-space: nowrap;
+}
+
+.profile__aim-list {
+  margin: 0;
+  padding: 23px 19px 5px;
+  border: 1px solid #ededed;
+
+  list-style: none;
+}
+
+.profile__aim-item {
+  margin-bottom: 19px;
+}
+
+.profile__radio + label {
+  position: relative;
+
+  padding-left: 45px;
+}
+
+.profile__radio + label::before {
+  content: "";
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cecece;
+
+  border-radius: 50%;
+}
+
+.profile__radio:checked + label::after {
+  content: "";
+
+  position: absolute;
+  top: 6px;
+  left: 9px;
+
+  width: 12px;
+  height: 12px;
+
+  background-color: #68b738;
+  border-radius: 50%;
+}
+
+.profile__radio:focus + label::before{
+  border-color: #bcbcbc;
+  outline: 2px solid highlight;
+}
+
+.profile__radio:hover + label::before {
+  border-color: #bcbcbc;
+}
+
+.profile__radio:active + label {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .profile {
+    width: 634px;
+    margin: 0 auto 75px;
+    padding-left: 4px;
+  }
+
+  .profile__data-list {
+    margin-bottom: 72px;
+    padding: 0;
+  }
+
+  .profile__data-item {
+    margin-bottom: 20px;
+  }
+
+  .profile__data-item label {
+    margin-right: 17px;
+  }
+
+  .profile__aim-list {
+    padding: 33px 27px 2px;
+  }
+
+  .profile__aim-item {
+    margin-bottom: 29px;
+  }
+
+  .profile__radio + label {
+    padding-left: 59px;
+  }
+
+  .profile__radio + label::before {
+    top: -4px;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile__radio:checked + label::after {
+    top: 7px;
+    left: 11px;
+
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .profile {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin-bottom: 49px;
+    padding-left: 0;
+  }
+
+  .profile__data-list {
+    width: 570px;
+    margin-bottom: 0;
+  }
+
+  .profile__aim-list {
+    width: 570px;
+  }
+}

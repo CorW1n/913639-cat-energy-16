@@ -1,0 +1,169 @@
+.contacts {
+  margin-bottom: 13px;
+}
+
+.contacts__title {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  margin-bottom: 34px;
+  padding-left: 19px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+
+  &::after {
+    content: "";
+
+    flex-grow: 1;
+    width: 10px;
+    height: 3px;
+    margin-top: 14px;
+    margin-left: 16px;
+
+    background-color: #68b738;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0 20px 1px 19px;
+
+  list-style: none;
+}
+
+.contacts__item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.contacts__item label {
+  margin-right: 11px;
+
+  white-space: nowrap;
+}
+
+.contacts__email {
+  padding-right: 40px;
+}
+
+.contacts__email:focus + .contacts__icon,
+.contacts__phone:focus + .contacts__icon {
+  fill: #68b738;
+}
+
+.contacts__icon {
+  position: absolute;
+  left: 248px;
+
+  fill: #222222;
+
+  &--mail {
+    top: 16px;
+  }
+
+  &--phone {
+    top: 13px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    margin-bottom: 44px;
+  }
+
+  .contacts__title {
+    margin-bottom: 76px;
+    padding-left: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+
+      width: 30px;
+      height: 3px;
+      margin-top: 22px;
+      margin-right: 39px;
+
+      background-color: #68b738;
+    }
+
+    &::after {
+      margin-top: 22px;
+      margin-left: 43px;
+    }
+  }
+
+  .contacts__list {
+    width: 634px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 4px;
+  }
+
+  .contacts__item {
+    margin-bottom: 20px;
+
+    label {
+      margin-right: 18px;
+    }
+  }
+
+  .contacts__icon {
+    left: 594px;
+
+    &--mail {
+      top: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    margin-bottom: 46px;
+  }
+
+  .contacts__title {
+    padding-left: 40px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .contacts__list {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .contacts__item {
+    width: 570px;
+  }
+
+  .contacts__icon {
+    left: 533px;
+
+    &--mail {
+      top: 20px;
+    }
+
+    &--phone {
+      top: 17px;
+    }
+  }
+}
