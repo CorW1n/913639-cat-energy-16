@@ -120,21 +120,21 @@
         <li class="social__item social__item--vk">
           <a class="social__link" href="https://vk.com/htmlacademy">Мы во Вконтакте
             <svg class="social__icon" width="22" height="12">
-              <use xlink:href="#icon-vk"></use>
+              <use xlink:href="#sprite-vk"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--insta">
           <a class="social__link" href="https://instagram.com/htmlacademy">Мы в Инстаграме
             <svg class="social__icon" width="16" height="16">
-              <use xlink:href="#icon-insta"></use>
+              <use xlink:href="#sprite-insta"></use>
             </svg>
           </a>
         </li>
         <li class="social__item social__item--fb">
           <a class="social__link" href="https://facebook.com/htmlacademy">Мы в Фейсбуке
             <svg class="social__icon" width="10" height="19">
-              <use xlink:href="#icon-fb"></use>
+              <use xlink:href="#sprite-fb"></use>
             </svg>
           </a>
         </li>
@@ -142,30 +142,14 @@
       <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__name">HTML Academy</span>
         <svg class="copyright__logo" width="34" height="48">
-          <use xlink:href="#icon-htmlacademy"></use>
+          <use xlink:href="#sprite-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/picturefill.min.js"></script>
-  <script>
-    var menu = document.querySelector('.menu');
-    var menuToggle = document.querySelector('.menu__toggle');
-
-    menu.classList.remove('menu--nojs');
-
-    menuToggle.addEventListener('click', function () {
-      if (menu.classList.contains('menu--closed')) {
-        menu.classList.remove('menu--closed');
-        menu.classList.add('menu--opened');
-      } else {
-        menu.classList.add('menu--closed');
-        menu.classList.remove('menu--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
