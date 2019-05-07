@@ -50,7 +50,7 @@
         <ul class="profile__data-list">
           <li class="profile__data-item">
             <label for="data-name">Имя:*</label>
-            <input class="profile__name text-input" type="text" name="name" placeholder="Барсик" id="data-name" required>
+            <input class="profile__name text-input" type="text" name="name" placeholder="Барсик" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="data-name" required>
           </li>
           <li class="profile__data-item">
             <label for="data-weight">Вес (кг):*</label>
@@ -125,6 +125,18 @@
         <p class="form__note">* — Обязательные поля</p>
       </div>
     </form>
+    <section class="map">
+      <div class="map__columns">
+        <div class="map__slogan">
+          Приглашаем<br>к сотрудничеству дилеров!
+        </div>
+        <div class="map__adress-wrapper">
+          <div class="map__adress">ул. Большая Конюшенная, д. 19/8</div>
+          <div class="map__city">Санкт-Петербург</div>
+        </div>
+      </div>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CCVhE-PL" frameborder="0" allowfullscreen="true"></iframe>
+    </section>
   </main>
 
   <footer class="footer">

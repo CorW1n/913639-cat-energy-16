@@ -16,7 +16,7 @@
   .catalog-main {
     width: 768px;
     margin: 0 auto;
-    padding: 40px 30px 0;
+    padding: 40px 0 0;
   }
 
   .catalog-main__title {
@@ -24,7 +24,7 @@
     margin: 0;
     margin-bottom: 55px;
     padding: 0;
-    padding-left: 1px;
+    padding-left: 31px;
 
     font-size: 60px;
   }
@@ -33,6 +33,10 @@
 @media (min-width: $desktop-width) {
   .catalog-main {
     width: 1300px;
-    padding: 48px 40px 0;
+    padding: 48px 0 0;
+  }
+
+  .catalog-main__title {
+    padding-left: 41px;
   }
 }

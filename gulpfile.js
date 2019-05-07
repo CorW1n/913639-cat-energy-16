@@ -39,6 +39,7 @@ gulp.task("compress", function () {
       "source/js/**.js",
       "!source/js/*.min.js"
     ])
+    .pipe(gulp.dest("build/js"))
     .pipe(uglify())
     .pipe(rename({suffix: ".min"}))
     .pipe(gulp.dest("build/js"));
@@ -87,7 +88,7 @@ gulp.task("copy", function () {
       "source/fonts/**/*.{woff,woff2}",
       "source/img/**",
       "!source/img/sprite-*.svg",
-      "source/js/**.js",
+      "source/js/*.min.js",
       "source/*.ico"
     ], {
       base: "source"

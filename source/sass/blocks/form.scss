@@ -1,3 +1,7 @@
+.form {
+  display: block;
+}
+
 .form__title {
   width: 320px;
   margin: 0 auto 25px;
@@ -21,7 +25,7 @@
 
 .form form {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 32px;
 }
 
 .form label {
@@ -42,6 +46,8 @@
 
 .form__button {
   margin-bottom: 21px;
+
+  cursor: pointer;
 }
 
 .form__note {
@@ -79,6 +85,7 @@
 
   .form form {
     width: 768px;
+    margin-bottom: 71px;
   }
 
   .form label {
@@ -126,6 +133,7 @@
 
   .form form {
     width: 1300px;
+    margin-bottom: 82px;
   }
 
   .form__button-wrapper {
