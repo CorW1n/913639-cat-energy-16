@@ -46,6 +46,10 @@
   .menu--nojs .menu__toggle {
     display: none;
   }
+
+  .menu--nojs .menu__list {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {

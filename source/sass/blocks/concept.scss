@@ -1,6 +1,6 @@
 .concept {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 60px;
 }
 
 .concept__title {
@@ -39,7 +39,9 @@
   }
 
   &:nth-child(1)::before {
-    background: url("../img/advantage-leaf@1x.png") center center no-repeat, #68b738;
+    background:
+      url("../img/advantage-leaf@1x.png") center center no-repeat,
+      #68b738;
     background-size: 50px 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -49,7 +51,9 @@
   }
 
   &:nth-child(2)::before {
-    background: url("../img/advantage-powder@1x.png") center center no-repeat, #68b738;
+    background:
+      url("../img/advantage-powder@1x.png") center center no-repeat,
+      #68b738;
     background-size: 50px 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -59,7 +63,9 @@
   }
 
   &:nth-child(3)::before {
-    background: url("../img/advantage-dining@1x.png") center center no-repeat, #68b738;
+    background:
+      url("../img/advantage-dining@1x.png") center center no-repeat,
+      #68b738;
     background-size: 50px 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -69,13 +75,21 @@
   }
 
   &:nth-child(4)::before {
-    background: url("../img/advantage-clock@1x.png") center center no-repeat, #68b738;
+    background:
+      url("../img/advantage-clock@1x.png") center center no-repeat,
+      #68b738;
     background-size: 50px 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
       background-size: 50px 50px;
     }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .concept__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -95,8 +109,8 @@
 
 @media (min-width: $tablet-width) {
   .concept {
-    min-height: 750px + 1px; //временно
     width: 768px;
+    margin-bottom: 42px;
 
     .wrap {
       width: 768px;
@@ -140,7 +154,9 @@
     }
 
     &:nth-child(1)::before {
-      background: url("../img/advantage-leaf@1x.png") center center no-repeat, #68b738;
+      background:
+        url("../img/advantage-leaf@1x.png") center center no-repeat,
+        #68b738;
       background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -150,7 +166,9 @@
     }
 
     &:nth-child(2)::before {
-      background: url("../img/advantage-powder@1x.png") center center no-repeat, #68b738;
+      background:
+        url("../img/advantage-powder@1x.png") center center no-repeat,
+        #68b738;
       background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -160,7 +178,9 @@
     }
 
     &:nth-child(3)::before {
-      background: url("../img/advantage-dining@1x.png") center center no-repeat, #68b738;
+      background:
+        url("../img/advantage-dining@1x.png") center center no-repeat,
+        #68b738;
       background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -170,7 +190,9 @@
     }
 
     &:nth-child(4)::before {
-      background: url("../img/advantage-clock@1x.png") center center no-repeat, #68b738;
+      background:
+        url("../img/advantage-clock@1x.png") center center no-repeat,
+        #68b738;
       background-size: 50px 50px;
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -222,6 +244,14 @@
       top: -38px;
       right: 37px;
     }
+
+    &:nth-child(3n) {
+      margin-bottom: 60px;
+    }
+
+    &:nth-child(4n) {
+      margin-bottom: 60px;
+    }
   }
 
   .concept__description {
@@ -236,49 +266,55 @@
 
 @media (min-width: $desktop-width) {
   .concept {
-    min-height: 410px; //временно
     width: 1300px;
+    margin-bottom: 10px;
 
     .wrap {
       width: 1300px;
       padding-top: 73px;
+      padding-right: 35px;
     }
   }
 
   .concept__item {
-    width: 245px;
-    margin-right: 80px;
-    margin-bottom: 20px;
+    width: 250px;
+    margin-right: 75px;
+    margin-bottom: 0;
     padding-top: 113px;
     padding-left: 0;
-    padding-bottom: 45px;
+    padding-bottom: 47px;
 
     &:nth-child(2n) {
-      margin-right: 80px;
+      margin-right: 75px;
+    }
+
+    &:nth-child(3n) {
+      margin-bottom: 0;
     }
 
     &:nth-child(4n) {
       margin-right: 0;
+      margin-bottom: 0;
     }
 
     &:nth-child(1)::after {
       top: -38px;
-      right: 27px;
+      right: 32px;
     }
 
     &:nth-child(2)::after {
       top: -38px;
-      right: 34px;
+      right: 39px;
     }
 
     &:nth-child(3)::after {
       top: -37px;
-      right: 31px;
+      right: 36px;
     }
 
     &:nth-child(4)::after {
       top: -38px;
-      right: 31px;
+      right: 36px;
     }
   }
 }

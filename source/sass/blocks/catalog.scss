@@ -1,6 +1,6 @@
 .catalog {
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 28px;
 }
 
 .catalog__list {
@@ -122,8 +122,9 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    width: 708px;
-    min-height: 2250px; // временно
+    width: 768px;
+    margin-bottom: 37px;
+    padding: 0 30px;
   }
 
   .catalog__list {
@@ -228,8 +229,9 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1220px;
-    min-height: 1110px; // временно
+    width: 1300px;
+    margin-bottom: 42px;
+    padding: 0 40px;
   }
 
   .catalog__item {

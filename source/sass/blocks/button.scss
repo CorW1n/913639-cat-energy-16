@@ -2,8 +2,10 @@
   display: block;
   width: 280px;
   padding: 10px 0;
+  border: none;
 
   color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -20,8 +22,20 @@
   line-height: 18px;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active span {
+  opacity: 0.3;
+}
+
 .button--color {
   color: #444444;
 
   background-color: #f2f2f2;
+}
+
+.button--color:hover {
+  background-color: #ebebeb;
 }
