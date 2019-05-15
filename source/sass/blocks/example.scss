@@ -388,11 +388,17 @@
     border: none;
 
     &::before {
+      top: 204px;
       right: 325px;
+
+      height: auto;
     }
 
     &::after {
+      top: 204px;
       left: 975px;
+
+      height: auto;
     }
   }
 
