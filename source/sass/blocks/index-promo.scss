@@ -129,10 +129,11 @@
 @media (min-width: $desktop-width) {
   .index-promo {
     width: 1300px;
-    min-height: 636px; // временно
 
     .wrap {
       padding-top: 82px;
+      padding-bottom: 80px;
+      padding-left: 120px;
     }
 
     &::before {
@@ -158,16 +159,18 @@
   }
 
   .index-promo__title {
-    padding-left: 81px;
+    padding-left: 1px;
   }
 
   .index-promo__slogan {
-    padding-left: 81px;
+    margin-bottom: 53px;
+    padding-left: 1px;
   }
 
   .index-promo__link {
-    top: 316px;
-    left: 120px;
+    position: static;
+
+    margin-bottom: 188px;
   }
 
   .index-promo__image {
