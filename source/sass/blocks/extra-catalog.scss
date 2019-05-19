@@ -214,14 +214,45 @@
 
 @media (min-width: $desktop-width) {
   .extra-catalog {
-    width: 1300px;
+    position: relative;
+
+    width: 100%;
     margin-bottom: 17px;
+    padding-top: 116px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 22px;
+
+      width: 100%;
+      min-width: 1300px;
+      height: 3px;
+
+      background-color: #68b738;
+    }
   }
 
   .extra-catalog__title {
+    position: absolute;
+    top: 0;
+    left: calc((100% - 1300px) / 2);
+
+    display: inline-block;
+    margin: 0;
+    padding-right: 37px;
     padding-left: 40px;
 
+    background-color: #ffffff;
+
+    vertical-align: top;
+
     &::before {
+      display: none;
+    }
+
+    &::after {
       display: none;
     }
   }

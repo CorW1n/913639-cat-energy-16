@@ -126,29 +126,40 @@
 
     margin-bottom: 46px;
     padding-top: 112px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 22px;
+
+      width: 100%;
+      min-width: 1300px;
+      height: 3px;
+
+      background-color: #68b738;
+    }
   }
 
   .contacts__title {
     position: absolute;
     top: 0;
-    left: calc((100% - 1300px) / 2 + 40px);
+    left: calc((100% - 1300px) / 2);
 
-    width: calc((100% + 1300px) / 2 - 40px);
+    display: inline-block;
+    padding-right: 43px;
+    padding-left: 40px;
 
-    // background-color: #ffffff;
+    background-color: #ffffff;
+
+    vertical-align: top;
 
     &::before {
       display: none;
     }
 
     &::after {
-      position: absolute;
-      left: calc((1300px - 100%) / 2 - 40px);
-      z-index: -1;
-
-      width: 100%;
-      min-width: 1300px;
-      margin-left: 0;
+      display: none;
     }
   }
 

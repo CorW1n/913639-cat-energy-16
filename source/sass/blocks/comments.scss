@@ -81,13 +81,42 @@
 
 @media (min-width: $desktop-width) {
   .comments {
+    position: relative;
+
     margin-bottom: 67px;
+    padding-top: 112px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 22px;
+
+      width: 100%;
+      min-width: 1300px;
+      height: 3px;
+
+      background-color: #68b738;
+    }
   }
 
   .comments__title {
-    padding-left: 40px;
+    position: absolute;
+    top: 0;
+    left: calc((100% - 1300px) / 2);
+
+    display: inline-block;
+    padding: 0 40px;
+
+    background-color: #ffffff;
+
+    vertical-align: top;
 
     &::before {
+      display: none;
+    }
+
+    &::after {
       display: none;
     }
   }
