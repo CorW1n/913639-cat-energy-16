@@ -52,11 +52,13 @@
         <ul class="profile__data-list">
           <li class="profile__data-item">
             <label for="data-name">Имя:*</label>
-            <input class="profile__name text-input" type="text" name="name" placeholder="Барсик" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="data-name" required>
+            <input class="profile__name text-input" type="text" name="name" placeholder="Барсик"
+              pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" id="data-name" required>
           </li>
           <li class="profile__data-item">
             <label for="data-weight">Вес (кг):*</label>
-            <input class="profile__weight text-input" type="text" name="weight" placeholder="7" id="data-weight" required>
+            <input class="profile__weight text-input" type="text" name="weight" placeholder="7" id="data-weight"
+              required>
           </li>
           <li class="profile__data-item">
             <label for="data-age">Возраст (лет):</label>
@@ -65,11 +67,13 @@
         </ul>
         <ul class="profile__aim-list">
           <li class="profile__aim-item">
-            <input class="visually-hidden profile__radio" type="radio" name="aim-toggle" value="Похудение" id="slim-tog" checked>
+            <input class="visually-hidden profile__radio" type="radio" name="aim-toggle" value="Похудение" id="slim-tog"
+              checked>
             <label for="slim-tog">Похудение</label>
           </li>
           <li class="profile__aim-item">
-            <input class="visually-hidden profile__radio" type="radio" name="aim-toggle" value="Набор массы" id="pro-tog">
+            <input class="visually-hidden profile__radio" type="radio" name="aim-toggle" value="Набор массы"
+              id="pro-tog">
             <label for="pro-tog">Набор массы</label>
           </li>
           <li class="profile__aim-item">
@@ -79,18 +83,20 @@
         </ul>
       </section>
       <section class="form__contacts contacts">
-        <h2 class="contacts__title">Контактные данные&nbsp<br>(владельца кота)</h2>
+        <h2 class="contacts__title">Контактные данные&nbsp;<br>(владельца кота)</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
             <label for="contacts-email">e-mail:*</label>
-            <input class="contacts__email text-input" type="email" name="email" placeholder="kuklachev@gmail.com" id="contacts-email" required>
+            <input class="contacts__email text-input" type="email" name="email" placeholder="kuklachev@gmail.com"
+              id="contacts-email" required>
             <svg class="contacts__icon contacts__icon--mail" width="17" height="13">
               <use xlink:href="#sprite-mail"></use>
             </svg>
           </li>
           <li class="contacts__item">
             <label for="contacts-phone">Телефон:*</label>
-            <input class="contacts__phone text-input" type="tel" name="phone" placeholder="8 (960) 900-60-90" id="contacts-phone" required>
+            <input class="contacts__phone text-input" type="tel" name="phone" placeholder="8 (960) 900-60-90"
+              id="contacts-phone" required>
             <svg class="contacts__icon contacts__icon--phone" width="20" height="20">
               <use xlink:href="#sprite-phone"></use>
             </svg>
@@ -99,7 +105,8 @@
       </section>
       <section class="form__comments comments">
         <h2 class="comments__title">Комментарий</h2>
-        <textarea class="comments__message text-input" cols="33" rows="7" placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите о повадках кота"></textarea>
+        <textarea class="comments__message text-input" cols="33" rows="7"
+          placeholder="Расскажите обо всех повадках кота" aria-label="Расскажите о повадках кота"></textarea>
       </section>
       <section class="form__extra extra">
         <h2 class="extra__title">Дополнительно</h2>
@@ -123,7 +130,7 @@
         </ul>
       </section>
       <div class="form__button-wrapper">
-        <button class="button form__button" type="submit"><span>Отправить заявку</span></button>
+        <button class="button form__button" type="submit">Отправить заявку</button>
         <p class="form__note">* — Обязательные поля</p>
       </div>
     </form>
