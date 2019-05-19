@@ -114,10 +114,6 @@
   .contacts__icon {
     left: 594px;
 
-    &--mail {
-      // top: 20px;
-    }
-
     &--phone {
       top: 17px;
     }
@@ -126,20 +122,40 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
+    position: relative;
+
     margin-bottom: 46px;
+    padding-top: 112px;
   }
 
   .contacts__title {
-    padding-left: 40px;
+    position: absolute;
+    top: 0;
+    left: calc((100% - 1300px) / 2 + 40px);
+
+    width: calc((100% + 1300px) / 2 - 40px);
+
+    // background-color: #ffffff;
 
     &::before {
       display: none;
+    }
+
+    &::after {
+      position: absolute;
+      left: calc((1300px - 100%) / 2 - 40px);
+      z-index: -1;
+
+      width: 100%;
+      min-width: 1300px;
+      margin-left: 0;
     }
   }
 
   .contacts__list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 1220px;
   }
 

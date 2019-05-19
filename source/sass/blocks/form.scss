@@ -119,20 +119,20 @@
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 1300px;
+    width: 100%;
   }
 
   .form__title {
     padding-top: 48px;
-    padding-left: 41px;
+    padding-left: calc((100% - 1300px) / 2 + 41px);
   }
 
   .form__instruction {
-    padding-left: 41px;
+    padding-left: calc((100% - 1300px) / 2 + 41px);
   }
 
   .form form {
-    width: 1300px;
+    width: 100%;
     margin-bottom: 82px;
   }
 

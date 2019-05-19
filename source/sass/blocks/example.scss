@@ -383,20 +383,21 @@
   .example {
     display: flex;
     justify-content: flex-start;
-    width: 1300px;
-    padding: 0 0 0 40px;
+    width: 100%;
+    padding: 0 0 0 calc((100% - 1300px) / 2 + 40px);
     border: none;
 
     &::before {
       top: 204px;
-      right: 325px;
+      right: calc((100% - 1300px) / 2 + 325px);
+      left: 0;
 
       height: auto;
     }
 
     &::after {
       top: 204px;
-      left: 975px;
+      left: calc((100% - 1300px) / 2 + 975px);
 
       height: auto;
     }

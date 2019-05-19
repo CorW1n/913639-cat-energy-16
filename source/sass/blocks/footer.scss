@@ -1,12 +1,13 @@
 .footer {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .footer > .wrap {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .footer__logo {
@@ -31,14 +32,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .footer {
-    width: 768px;
-  }
-
   .footer > .wrap {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 768px;
     padding-top: 28px;
     padding-bottom: 30px;
   }
@@ -54,6 +52,10 @@
 
 @media (min-width: $desktop-width) {
   .footer {
+    background-color: #f2f2f2;
+  }
+
+  .footer > .wrap {
     width: 1300px;
   }
 }

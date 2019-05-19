@@ -197,7 +197,13 @@
   .promo {
     width: 570px;
     margin: 0;
+    margin-right: 80px;
+    margin-bottom: 13px;
     padding-top: 76px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
 
     &::before {
       top: 47px;

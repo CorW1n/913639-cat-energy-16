@@ -84,6 +84,10 @@
   opacity: 0.3;
 }
 
+.extra__checkbox:disabled + label {
+  opacity: 0.2;
+}
+
 @media (min-width: $tablet-width) {
   .extra {
     margin-bottom: 12px;

@@ -32,11 +32,11 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main {
-    width: 1300px;
+    width: 100%;
     padding: 48px 0 0;
   }
 
   .catalog-main__title {
-    padding-left: 41px;
+    padding-left: calc((100% - 1300px) / 2 + 41px);
   }
 }

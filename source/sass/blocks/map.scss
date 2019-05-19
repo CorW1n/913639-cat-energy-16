@@ -81,7 +81,7 @@
   .map {
     position: relative;
 
-    width: 1300px;
+    width: 100%;
   }
 
   .map iframe {
@@ -91,7 +91,7 @@
   .map__columns {
     position: absolute;
     top: 95px;
-    left: 40px;
+    left: calc((100% - 1300px) / 2 + 40px);
 
     width: 570px;
     padding-left: 76px;
