@@ -1,7 +1,7 @@
 .example {
   position: relative;
 
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   padding-bottom: 36px;
 
@@ -20,7 +20,8 @@
 }
 
 .example__desc-wrapper {
-  margin-bottom: 34px;
+  width: 320px;
+  margin: 0 auto 34px;
   padding: 0 20px;
 }
 
@@ -131,7 +132,7 @@
 
 .example__photo {
   display: block;
-  margin-bottom: 32px;
+  margin: 0 auto 32px;
 }
 
 .example__controls-wrapper {
@@ -157,10 +158,6 @@
   text-transform: uppercase;
 
   cursor: pointer;
-
-  span {
-    position: relative;
-  }
 }
 
 .example__scale {
@@ -182,7 +179,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    width: 768px;
+    width: 100%;
     padding-bottom: 68px;
     border-top: 1px solid #e6e6e6;
 
@@ -208,6 +205,7 @@
   }
 
   .example__desc-wrapper {
+    width: 768px;
     margin-bottom: 86px;
     padding: 43px 30px 0;
   }
@@ -404,7 +402,10 @@
   }
 
   .example__desc-wrapper {
+    flex-shrink: 0;
+    width: 445px;
     padding: 69px 0 0;
+    margin: 0;
     margin-right: 125px;
     margin-bottom: 75px;
   }

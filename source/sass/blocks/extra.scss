@@ -86,6 +86,8 @@
 
 .extra__checkbox:disabled + label {
   opacity: 0.2;
+
+  cursor: default;
 }
 
 @media (min-width: $tablet-width) {

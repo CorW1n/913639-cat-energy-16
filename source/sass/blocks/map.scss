@@ -1,6 +1,7 @@
 .map {
-  width: 320px;
-  margin: 0 auto;
+  width: 100%;
+
+  background-color: #f2f2f2;
 }
 
 .map iframe {
@@ -13,12 +14,12 @@
 .map__columns {
   display: flex;
   justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
   padding: 28px 19px 26px;
-
-  background-color: #f2f2f2;
 }
 
-.map--color .map__columns {
+.map--color {
   background-color: #ffffff;
 }
 
@@ -40,15 +41,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    width: 768px;
-  }
-
   .map iframe {
     height: 396px;
   }
 
   .map__columns {
+    width: 768px;
     padding: 66px 72px 61px 70px;
   }
 
@@ -80,8 +78,6 @@
 @media (min-width: $desktop-width) {
   .map {
     position: relative;
-
-    width: 100%;
   }
 
   .map iframe {

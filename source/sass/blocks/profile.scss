@@ -87,6 +87,8 @@
 
 .profile__radio:disabled + label {
   opacity: 0.2;
+
+  cursor: default;
 }
 
 @media (min-width: $tablet-width) {
