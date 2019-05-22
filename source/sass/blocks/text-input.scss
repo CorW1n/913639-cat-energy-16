@@ -35,13 +35,13 @@
   outline: none;
 }
 
-.text-input:required {
+.text-input:invalid {
   border-color: #ff8282;
 
   box-shadow: inset 0 0 0 1px #ff8282;
 }
 
-.text-input:required + svg {
+.text-input:invalid + svg {
   fill: #ff8282;
 }
 

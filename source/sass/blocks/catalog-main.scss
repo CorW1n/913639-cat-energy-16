@@ -14,8 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-main {
-    width: 768px;
-    margin: 0 auto;
+    width: 100%;
     padding: 40px 0 0;
   }
 
@@ -24,7 +23,7 @@
     margin: 0;
     margin-bottom: 55px;
     padding: 0;
-    padding-left: 31px;
+    padding-left: calc((100% - 768px) / 2 + 31px);
 
     font-size: 60px;
   }
@@ -32,11 +31,10 @@
 
 @media (min-width: $desktop-width) {
   .catalog-main {
-    width: 1300px;
     padding: 48px 0 0;
   }
 
   .catalog-main__title {
-    padding-left: 41px;
+    padding-left: calc((100% - 1300px) / 2 + 41px);
   }
 }

@@ -1,5 +1,6 @@
 .form {
   display: block;
+  width: 100%;
 }
 
 .form__title {
@@ -24,7 +25,7 @@
 }
 
 .form form {
-  width: 320px;
+  width: 100%;
   margin: 0 auto 32px;
 }
 
@@ -59,16 +60,11 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form {
-    width: 768px;
-    margin: 0 auto;
-  }
-
   .form__title {
     width: 100%;
     margin-bottom: 56px;
     padding-top: 40px;
-    padding-left: 29px;
+    padding-left: calc((100% - 768px) / 2 + 29px);
 
     font-size: 60px;
     line-height: 60px;
@@ -77,14 +73,13 @@
   .form__instruction {
     width: 100%;
     margin-bottom: 65px;
-    padding-left: 70px;
+    padding-left: calc((100% - 768px) / 2 + 70px);
 
     font-size: 20px;
     line-height: 30px;
   }
 
   .form form {
-    width: 768px;
     margin-bottom: 71px;
   }
 
@@ -118,21 +113,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form {
-    width: 1300px;
-  }
-
   .form__title {
     padding-top: 48px;
-    padding-left: 41px;
+    padding-left: calc((100% - 1300px) / 2 + 41px);
   }
 
   .form__instruction {
-    padding-left: 41px;
+    padding-left: calc((100% - 1300px) / 2 + 41px);
   }
 
   .form form {
-    width: 1300px;
+    width: 100%;
     margin-bottom: 82px;
   }
 
